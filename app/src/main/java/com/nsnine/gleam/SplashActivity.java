@@ -1,13 +1,14 @@
 package com.nsnine.gleam;
 
 import android.annotation.SuppressLint;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.os.Handler;
-import android.view.MotionEvent;
 import android.view.View;
 
+import org.androidannotations.annotations.EActivity;
+
+@EActivity(R.layout.activity_splash)
 public class SplashActivity extends AppCompatActivity {
     private View mContentView;
     private final Runnable mHidePart2Runnable = new Runnable() {
@@ -44,8 +45,6 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_splash);
 
         mVisible = true;
     }

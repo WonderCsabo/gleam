@@ -1,7 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
+
 
 def AAVersion = '4.1'
 
@@ -38,15 +37,7 @@ allprojects {
 //    }
 //}
 
-android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.2"
 
-//    defaultConfig {
-//        versionCode 1
-//        versionName "1.0"
-//    }
-}
 
 //task clean(type: Delete) {
 //    delete rootProject.buildDir
